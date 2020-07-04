@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class = 'container-fluid'>
+      <br>
+      <br>
+      <!----Change: description---->
+      <h1 class = 'white' style='font-size: 50px;'>Welcome</h1>
+      <p class = 'white' style='font-size: 20px;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+      <p class = 'white'style='font-size: 20px;'>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      <!-------------------------->
+      <br>
+      <br>
+      <div class = 'key-input'>
+        <form method = 'POST' onsubmit = 'submitAnswer()'>
+          <div class = 'key-input-group d-block text-center'>
+            <!----Change---->
+            <div class = 'key-input-label d-block text-center'>Key 1
+            </div>
+            <!------------->
+            <br>
+            <div class = 'key-input-answer d-block text-center px-2 mb-3'>
+              <!----Change: number of boxes---->
+              <div class = 'word d-inline-block'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+              <!---------------------------->
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="font-weight-bold">Submit</button>
+          </div>
+        </form>
+      </div>           
+    </div>
+
+  </body>
+</html>
