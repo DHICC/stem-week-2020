@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <div class = 'box'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </div>
+  </head>
+  <body>
+    <div class = 'container-fluid'>
+      <br>
+      <br>
+      <!----Change: description---->
+    <div class = 'box'>
+      <h1 class = 'white' style='font-size: 50px;'>W3lcome to 3asy stag3 5!</h1>
+      <p class = 'white' style='font-size: 20px;'>A st0ne 1s trapped bEtween tw0 d1mEns10ns.
+      The f1rst 1s 444. The sEc0nd 1s h1ddEn. F1nd 1t. 
+      Mult1ply the tw0 d1mEns10ns t0 j0urnEy f0rward. </p>
+      <div class = 'box'>
+      Calculation: <input type="text" placeholder="Enter your equation" name="answer" required></input></br ><br/ ></div>
+      <button type="button" class="submit" id='submission'>Submit</button>
+    </div>
+
+
+      <br>
+      <br>
+      <div class = 'key-input'>
+        <form method = 'POST' onsubmit = 'submitAnswer()'>
+          <div class = 'key-input-group d-block text-center'>
+            <!----Change---->
+            </div>
+            <!------------->
+            <br>
+            <div class = 'key-input-answer d-block text-center px-2 mb-3'>
+
+      <!----Change: number of hints---->
+      <div class='text-center'>
+        <button type='button' class='hint' id='submit'>Reveal Hint</button>
+      </div>
+      <div class="popup" onclick="revealhint()">Click me to view the hint!
+  <span class="popuptext" id="reavealhint">A Simple Popup!</span>
+  </div>
+</div>
+
+      <!---------------------------->           
+    </div>
+  </body>
+</html>
