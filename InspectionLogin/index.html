@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/login-page.css">
+    <script defer src="login-page.js"></script>
+ </head>
+ <body>
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">You know what to do<span id="error-msg-second-line"></span></p>
+       </div>
+        <form id="login-form">
+           <!--01110101 01110011 01100101 01110010-->
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <!--01100010 01101001 01101110 01100001 01110010 01111001-->
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit">
+       </form>
+    </main>
+  </body>
+</html>
