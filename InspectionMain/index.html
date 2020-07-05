@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class = 'container-fluid'>
+      <br>
+      <br>
+      <!----https://mega.nz/file/1YpxCTZB#-JID79TLd5jDBw7aHPjCggUadrm8cBtcLTdx-wwdO68---->
+      <center>
+      <h1 class = 'white' style='font-size: 50px;'>Inspector</h1>
+      <p class = 'white' style='font-size: 20px;'>Can you find me within the source?</p>
+      <p class = 'white'style='font-size: 20px;'>The key starts with C</p>
+      </center>
+      <!-------------------------->
+      <br>
+      <br>
+      <div class = 'key-input'>
+        <form method = 'POST' onsubmit = 'submitAnswer()'>
+          <div class = 'key-input-group d-block text-center'>
+            <!----Change---->
+            <div class = 'key-input-label d-block text-center'>Key
+            </div>
+            <!------------->
+            <br>
+            <div class = 'key-input-answer d-block text-center px-2 mb-3'>
+              <!----Change: number of boxes---->
+              <div class = 'word d-inline-block'>
+                <input name = 'key_input[]' maxlength ='1' class = 'letter'>
+              <!---------------------------->
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" id='submit' class='submit'>SUBMIT</button>
+          </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <!----Change: number of hints---->
+      <div class='text-center' id='button1'>
+        <button type='button' class='hint'>Reveal Hint</button>
+      </div>
+      <!---------------------------->
+    </div>
+  </body>
+</html>
