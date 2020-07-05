@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style3.css" rel="stylesheet" type="text/css" />
+    <link href="style7.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload='loadPage()'>
     </script>
@@ -19,7 +19,7 @@
         </div>
         <br/>
         <label for='ans'>Answer:</label>
-        <input text='Ans' class='letter' id='input' name='input' required />
+        <textarea class='letter' rows="1"id='input'></textarea>
       </div>
     </div>
     <br/>
@@ -36,13 +36,13 @@
     let index = 0
 
     function loadPage(){
-
       //display audio
       audioDisplay()
       //display qn
       qn = document.getElementById('qn')
       qn.textContent = audioSequence[index].qn
 
+      init()
       console.log(index)
     }
 
@@ -55,11 +55,42 @@
       container.appendChild(x)
     }
 
+    var observe;
+    if (window.attachEvent) {
+      observe = function (element, event, handler) {
+        element.attachEvent('on'+event, handler)
+      };
+    }else {
+        observe = function (element, event, handler) {
+          element.addEventListener(event, handler,false)
+        }
+    }
+
+    function init () {
+      var text = document.getElementById('input');function resize () {
+        text.style.height = 'auto';
+        text.style.height = text.scrollHeight+'px'
+        }
+    /* 0-timeout to get the already changed text */
+      function delayedResize () {
+        window.setTimeout(resize, 0)
+      }
+      observe(text, 'change',  resize);
+      observe(text, 'cut',     delayedResize);
+      observe(text, 'paste',   delayedResize);
+      observe(text, 'drop',    delayedResize);
+      observe(text, 'keydown', delayedResize);
+
+      text.focus();
+      text.select();
+      resize();
+    }
+
     function sent() {
       ansInput = document.getElementById('input').value
   //im not sure whether this one works, and i hvn't added the thing can post img from the server side 
   //please check and i will change accordingly 
-      $.post("https://stem-week-cipher.herokuapp.com", [ansInput])
+      $.post("https://stem-week-cipher.herokuapp.com/testPicture", [ansInput])
       if (index !=4) {
         index ++
       } else {index = 0}
@@ -70,6 +101,6 @@
     document.getElementById('submit').addEventListener('click', function(event) {
       event.preventDefault()
       sent()
-  })
-    </script>
+    })
+  </script>
 </html>
