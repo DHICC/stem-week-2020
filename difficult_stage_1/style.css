@@ -107,13 +107,14 @@ h1 {
   margin-left:0px;
   margin-right:0px;
   margin-top:0px;
-  max-width:40px;
-  overflow-x:visible;
-  overflow-y:visible;
+  max-width:100px;
+  overflow: hidden;
   padding-bottom:1px;
   padding-left:2px;
   padding-right:2px;
   padding-top:1px;
+  resize: none;
+  outline: none;
   text-align:center;
   text-indent:0px;
   text-rendering:auto;
@@ -127,6 +128,14 @@ h1 {
   -webkit-rtl-ordering:logical;
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
   -webkit-border-image:none;
+}
+textarea {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: #D0D0D0;
+    resize: none;
 }
 
 
