@@ -43,8 +43,10 @@ function toServer() {
     } 
   })
   .then(function (data) {
-    const urlCreator = window.URL || window.webkitURL;
-    document.getElementById('image').src = urlCreator.createObjectURL(data);
+    if (data !== null){
+        const urlCreator = window.URL || window.webkitURL;
+        document.getElementById('image').src = urlCreator.createObjectURL(data);
+    }
   })
   .catch(function (error) {
     alert("error")//do smth when error happens
