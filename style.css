@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Balsamiq+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Play&family=Teko:wght@300&display=swap');
+/*---For everything---*/
+*{
+  font-family: 'Balsamiq Sans';
+  background-color: black;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.white{
+  color: white;
+  font-family: 'Play', sans-serif;
+}
+
+.hide{
+  display: none;
+}
+/*-----------------*/
+
+/*---index.html---*/
+.main-title {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+img{
+  width: 40%;
+  height: auto;
+}
+
+.my-container{
+  margin: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+
+col{
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+/*-----------------*/
+
+/*---Input box---*/
+.key-input{
+  background-color: rgba(230, 51, 90, 0.5) !important;
+
+  border: 2px solid rgb(230, 51, 90);
+}
+
+.key-input-group{
+  color: white;
+  font-size: 20px;
+}
+
+.key-input-answer d-block text-center px-2 mb-3{
+  box-sizing:border-box;
+  display:block;
+  font-family: 'Play', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  line-height:24px;
+  margin-bottom:16px;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+  text-size-adjust:100%;
+  width:558px;
+
+}
+
+.word d-inline-block{
+  display:inline-block;
+  height:28px;
+  width:280px;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.letter {
+  background-color:rgb(0, 0, 0);
+
+  border-image-outset:0;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+
+  border-bottom-color:rgb(102, 102, 102);
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+
+  border-left-color:rgb(102, 102, 102);
+  border-left-style:solid;
+  border-left-width:1px;
+
+  border-right-color:rgb(102, 102, 102);
+  border-right-style:solid;
+  border-right-width:1px;
+
+  border-top-color:rgb(102, 102, 102);
+  border-top-style:solid;
+  border-top-width:1px;
+
+  box-sizing:border-box;
+  color:white;
+  cursor:text;
+  display:inline-block;
+  font-size:16px;
+  height:28px;
+  letter-spacing:normal;
+  line-height:24px;
+  max-width:40px;
+  padding-bottom:1px;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:1px;
+  text-align:center;
+  text-rendering:auto;
+  text-shadow:none;
+  text-size-adjust:100%;
+  text-transform:none;
+  width:40px;
+  word-spacing:0px;
+  writing-mode:horizontal-tb;
+  -webkit-appearance:none;
+  -webkit-rtl-ordering:logical;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -webkit-border-image:none;
+}
+
+
+.submit{
+  background-color:rgb(240, 190, 55);
+  border: black;
+
+  box-sizing:border-box;
+  color:black;
+  display:inline-block;
+
+  font-family:"Orbitron", sans-serif;
+  height:35px;
+  font-weight:700;
+  letter-spacing:normal;
+  line-height:24px;
+  width:95px;
+  text-size-adjust:100%;
+  text-transform:uppercase;
+  -webkit-appearance:none;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -webkit-border-image:none;
+}
+
+.hint{
+  background-color:rgb(114, 255, 0);
+  border: rgb(118, 118, 118);
+  
+  box-sizing:border-box;
+  color:rgb(0, 0, 0);
+  display:inline-block;
+
+  font-family:"Orbitron", sans-serif;
+  font-weight:700;
+  height:26px;
+  letter-spacing:normal;
+  line-height:24px;
+  width:300px;
+  text-transform:uppercase;
+  text-size-adjust:100%;
+  -webkit-appearance:none;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -webkit-border-image:none;
+}
+
+.next {
+  background-color:rgb(240, 190, 55);
+  border: black;
+
+  box-sizing:border-box;
+  color:black;
+  display:inline-block;
+
+  font-family:"Orbitron", sans-serif;
+  height:35px;
+  font-weight:700;
+  letter-spacing:normal;
+  line-height:24px;
+  width:200px;
+  text-size-adjust:100%;
+  text-transform:uppercase;
+  -webkit-appearance:none;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -webkit-border-image:none;
+}
+
+/*stage 2.css*/
+.stage2-css{
+  font-family: 'Balsamiq Sans';
+  color: white;
+}
+
+.code-hidden {
+  color: rgb(24, 21, 21) !important;
+  font-size: 20px;
+}
