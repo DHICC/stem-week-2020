@@ -39,6 +39,7 @@ function toServer() {
     }else{
       wrongAns = document.getElementById('wrong')
       wrongAns.textContent = "oops, try again :D"
+      return null;
     } 
   })
   .then(function (data) {
