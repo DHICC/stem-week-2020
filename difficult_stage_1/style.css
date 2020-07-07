@@ -183,7 +183,7 @@ h1 {
   -webkit-border-image:none;
 }
 
-.image{
+.img{
   background-color:rgb(0, 0, 0);
 
   border-bottom-color:rgb(102, 102, 102);
@@ -202,8 +202,13 @@ h1 {
   border-top-style:solid;
   border-top-width:2px;
 
-  padding-top: 60px;
-  padding-right: 60px;
-  padding-bottom: 120px;
-  padding-left: 120px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+
 }
