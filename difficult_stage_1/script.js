@@ -39,15 +39,26 @@ function toServer() {
     }else{
       wrongAns = document.getElementById('wrong')
       wrongAns.textContent = "oops, try again :D"
+      document.getElementById('input').value = ''
       return null;
     } 
   })
   .then(function (data) {
     if (data !== null){
-        const urlCreator = window.URL || window.webkitURL;
-        document.getElementById('image').src = urlCreator.createObjectURL(data);
+      const urlCreator = window.URL ||window.webkitURL;
+      document.getElementById('image').src=
+      urlCreator.createObjectURL(data);
+      function sent() {
+        if (index !=4) {
+          index ++
+          document.getElementById('audio').innerHTML = ''
+          document.getElementById('input').value = ''
+          loadPage()
+        }
+      }
     }
   })
+  
   .catch(function (error) {
     alert("error")//do smth when error happens
   });
@@ -63,17 +74,9 @@ $('input[type="text"]')
     // resize on page load
     .each(resizeInput);
 
-function sent() {
-  if (index !=4) {
-    index ++
-  } else {index = 0}
-  document.getElementById('audio').innerHTML = ''
-  loadPage()
-}
 
 document.getElementById('submit').addEventListener('click', function(event) {
     toServer()
     event.preventDefault()
-    sent()
   }
 )
