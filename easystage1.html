@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>stage 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  
+  <body onload = 'loadpage()'>
+    <div class = 'container-fluid'>
+      <!----Change: description---->
+      <h1 class = 'white'>Can you name me?</h1>
+      <div class = 'white' id='qn' style = 'font-size:20px'></div>
+      <br>
+      <div class = 'white' id='keyQn' style = 'font-size:20px'></div>
+      <!-------------------------->
+      <br>
+      <br>
+      <div class = 'key-input'>
+        <form method = 'POST'>
+          <div class = 'key-input-group d-block text-center'>
+            <div class = 'key-input-label d-block text-center'>Key
+            </div>
+            <br>
+            <div class = 'key-input-answer d-block text-center px-2 mb-3'>
+              <!----Change: number of boxes---->
+              <div class = 'word d-inline-block' id = 'word d-inline-block'>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="submit" id = 'submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class='text-center'>
+        <button type='button' class='hint' id='hint'>Reveal Hint</button>
+      </div>           
+      <br>
+      <br>
+      <div class='text-center' id='next-container'>
+          <a href = '/'>
+          <button type='button' class='next'>Return home</button>
+          </a>
+          <a href = 'easy_stage2.html'>
+          <button type='button' class='next' id='next'>Next stage</button>
+          </a>
+      </div>           
+    </div>
+    <script src = 'easy_stage1.js'></script>
+  </body>
+</html>
